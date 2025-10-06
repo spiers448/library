@@ -12,24 +12,21 @@
         Console.WriteLine($"Book ISBN: {ISBN}\n");
     }
 
+    public Book(string bookTitle, string bookAuthor, int bookISBN)
+    {
+        Title = bookTitle;
+        Author = bookAuthor;
+        ISBN = bookISBN;
+    }
+
     static void Main(string[] args)
     {
         //create new book object
-        Book book = new Book();
-
-        //book information
-        book.Title = "C# for beginners";
-        book.Author = "Bill Gates";
-        book.ISBN = 123456789;
+        Book book = new Book("C# for beginners", "Bill Gates", 12345678);
 
         //create 2nd book
-        Book book2 = new Book();
+        Book book2 = new Book("C# Methods and classes", "Microsoft", 987654321);
 
-        //2nd book information
-        book2.Title = "C# Methods and classes";
-        book2.Author = "Microsoft";
-        book2.ISBN = 987654321;
-        
         //output book information
         book.displayInfo();
         book2.displayInfo();
