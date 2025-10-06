@@ -1,7 +1,8 @@
 ﻿
 using library;
-
-static void Main(string[] args)
+class Program
+{
+    static void Main(string[] args)
     {
         //create new book object
         Book book = new Book("C# for beginners", "Bill Gates", 12345678);
@@ -14,3 +15,4 @@ static void Main(string[] args)
         book2.displayInfo();
 
     }
+}
